@@ -11,7 +11,7 @@ export default function Poem(){
     const[lastName, setLastName] = useState("");
     const[hobby,setHobby] = useState("");
     const[petName,setPetName] = useState("");
-    const[isSubmite,setIsSubmited] = useState(false);
+    const[isSubmited,setIsSubmited] = useState(false);
 
     const handLeSubmite = (e) => {
          e.preventDefault();
@@ -24,7 +24,7 @@ export default function Poem(){
          }
     };
     const renderPoem = () => {
-        if (!address|| !favoriteColor|| !firstName|| !lastName|| !hobby|| !petName){
+        if (!isSubmited){
             return <em className="flex justify-center font-bold text-gray-500 mt-2">Fill in the form to reveal your pur poem......</em>;
         }
     
@@ -73,7 +73,7 @@ export default function Poem(){
                     placeholder="your favorite color"
                     className="p-2 border rounded-xl"
                     onChange={(e) => setfavoriteColor(e.target.value)} />
-                    <button type="handleSubmite" className="rounded-2xl bg-violet-400 hover:bg-pink-800 cursor-pointer text-center h-">Submit</button>
+                    <button type="submit" className="rounded-2xl bg-violet-400 hover:bg-pink-800 cursor-pointer text-center h-">Submit</button>
             </div>
            </form>
         </div>
