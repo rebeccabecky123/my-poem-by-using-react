@@ -37,7 +37,7 @@ export default function Poem(){
             );
         }
         return( 
-            <div className="flex justify-center tems-center ">  
+            <div className="flex justify-center items-center ">  
             <div className="sm bg-pink-300 rounded-2xl mt-6 py-3 px-4 shadow-2xl md ">
                  <h3 className="text-3xl text-center hover:animate-bounce underline font-semibold">My  Poem:</h3>
                  <div>{renderPoem ()}</div>     
