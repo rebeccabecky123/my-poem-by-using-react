@@ -1,5 +1,4 @@
-// In a place called {address} sa fair and bring, there lived{first name } {last name }
-// A beam of bright with dreams that soared and a heart so true.
+
 // In the land of {address}, where the sky is {favoriteColor},Lived{firstName}{lastName},who loved {hobby}so much
 // With their pet {petName}, always nearby, Thay laughed and played as the sun went down.
 
@@ -30,17 +29,17 @@ export default function Poem(){
         }
     
     return(
-        <div className="mt-3 text-center">
+        <div className="mt-3 text-center font-semibold text-gray-700 border-4 border-white shadow-2xl rounded px-4 py-2">
            
-            <p>In the land of {address}, where the sky is {favoriteColor},Lived {firstName} {lastName},who loved {hobby}so much</p>
-            <p> With their pet {petName}, always nearby, Thay laughed and played as the sun went down.</p>
+            <p>In the land of {address}, where the sky is {favoriteColor}, Lived {firstName} {lastName}, who loved {hobby} so much</p>
+            <p> With their pet {petName}, always near by, Thay laughed and played as the sun went down.</p>
             </div>
             );
         }
         return( 
             <div className="flex justify-center tems-center ">  
             <div className="sm bg-pink-300 rounded-2xl mt-6 py-3 px-4 shadow-2xl md ">
-                 <h3 className="text-3xl text-center hover:animate-bounce underline font-semibold">Your Poem:</h3>
+                 <h3 className="text-3xl text-center hover:animate-bounce underline font-semibold">My  Poem:</h3>
                  <div>{renderPoem ()}</div>     
            <form action="submit " onSubmit={handLeSubmite} >
            <div className="flex flex-col gap-4 font-bold mt-6 justify-center w-1/2 mx-auto pb-6 rounded-full">
@@ -74,7 +73,7 @@ export default function Poem(){
                     placeholder="your favorite color"
                     className="p-2 border rounded-xl"
                     onChange={(e) => setfavoriteColor(e.target.value)} />
-                    <button type="handleSubmite" className="rounded-2xl bg-violet-400 hover:bg-pink-800 cursor-pointer text-center h-">Submite </button>
+                    <button type="handleSubmite" className="rounded-2xl bg-violet-400 hover:bg-pink-800 cursor-pointer text-center h-">Submit</button>
             </div>
            </form>
         </div>
